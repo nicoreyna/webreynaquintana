@@ -56,7 +56,7 @@
           <div id="main">
             <div class="container">
               <div class="row">
-                <div id="carousel" class="carousel slide carousel-fade col-md-8 " data-ride="carousel" data-pause="false">
+                <div id="carousel" class="carousel slide carousel-fade col-8 " data-ride="carousel" data-pause="false">
                   <div class="carousel-inner">
                     <div class="carousel-item active pl-0">
                       <img class="d-block w-100" src="img/1.jpeg" alt="First slide">
@@ -68,76 +68,36 @@
                       <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
                     </div>    
                   </div>
-                  <div class="overlay">
-                    <div class="container">
-                      <div class="row align-items-center mt-4">
-                        <div class="col-md-8 offset-md-2 text-center text-md-right ">
-                          <h2 class="text-left">Buscar Inmuebles</h2>
-                          <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                              <a class="nav-link active" href="#">Comprar</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Alquilar</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <p class="d-none d-md-block text-uppercase">Suena - Condominio privado</p>
-                        <button class="btn btn-success">Más información</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
   
-                <div class="property-form col-md-3 ml-4">
+                <div class="property-form col ml-4">
                   <h4>Encontrá tu propiedad</h4>
                   <!-- RD Mailform-->
-                  <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
-                    <div class="range range-sm-bottom spacing-20">
-                      <div class="cell-lg-12 cell-md-4">
-                        <p class="text-uppercase">Your Name</p>
-                        <div class="form-wrap">
-                          <input class="form-input form-control-has-validation" id="contact-first-name" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span>
-                          <label class="form-label rd-input-label" for="contact-first-name">Your Full Name</label>
-                        </div>
-                      </div>
-                      <div class="cell-lg-12 cell-md-4 cell-sm-6">
-                        <p class="text-uppercase">Arrival</p>
-                        <div class="form-wrap">
-                          <label class="form-label form-label-icon rd-input-label" for="date-in"><span class="icon icon-primary fa-calendar"></span><span>Check-in Date</span></label>
-                          <input class="form-input form-control-has-validation form-control-last-child" id="date-in" data-time-picker="date" type="text" name="date" data-constraints="@Required" data-dtp="dtp_2VvbX"><span class="form-validation"></span>
-                        </div>
-                      </div>
-                      <div class="cell-lg-12 cell-md-4 cell-sm-6">
-                        <p class="text-uppercase">Departure</p>
-                        <div class="form-wrap">
-                          <label class="form-label form-label-icon rd-input-label" for="date-out"><span class="icon icon-primary fa-calendar"></span><span>Check-out Date</span></label>
-                          <input class="form-input form-control-has-validation form-control-last-child" id="date-out" data-time-picker="date" type="text" name="date" data-constraints="@Required" data-dtp="dtp_IXGo6"><span class="form-validation"></span>
-                        </div>
-                      </div>
-                      <div class="cell-lg-6 cell-md-4 cell-xs-6">
-                        <p class="text-uppercase">Adults</p>
-                        <div class="form-wrap form-wrap-validation">
-                          <!--Select 2-->
-                          <div class="select2-container form-input select-filter form-control-has-validation form-control-last-child" id="s2id_regula-generated-72871"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1">1</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen1_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1">   </ul></div></div><select class="form-input select-filter form-control-has-validation form-control-last-child" data-minimum-results-search="-1" data-placeholder="1" data-constraints="@Required" id="regula-generated-72871" tabindex="-1" title="" style="display: none;">
-                            <option>&nbsp;</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select><span class="form-validation"></span>
-                        </div>
-                      </div>
-                    
-                      <div class="cell-lg-12 cell-md-4">
-                        <button class="button button-primary button-square button-block button-effect-ujarak" type="submit"><span>check availability</span></button>
-                      </div>
-                    </div>
-                  </form>
+                  <select class="form-select col-md-12 mt-4 mb-4" aria-label="Default select example">
+                    <option selected>Operación</option>
+                    <option value="1">Compra</option>
+                    <option value="2">Alquiler</option>
+                  </select>
+
+                  
+                  <select class="form-select col-md-12 mb-4" aria-label="Default select example">
+                    <option selected>Barrio</option>
+                    <option value="1">Argüello</option>
+                    <option value="2">Bajo palermo</option>
+                    <option value="3">Escobar</option>
+                    <option value="4">Villa Cabrera</option>
+                  </select>
+
+                  
+                  <select class="form-select col-md-12 mb-4" aria-label="Default select example">
+                    <option selected>Tipo</option>
+                    <option value="1">Casa</option>
+                    <option value="2">Departamento</option>
+                    <option value="3">Local</option>
+                    <option value="4">Oficina</option>
+                  </select>
+
+                  <button type="button" class="btn btn col-12">Buscar</button>
                 </div>
               </div>
             </div>
