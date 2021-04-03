@@ -21,11 +21,14 @@ body{
     filter: grayscale(70%);
     margin: 0px;
     border-radius: 10px;
+    min-height: 400px;
+    max-height: 400px;
 }
 
 #main #carousel {
     position: relative;
     padding: 0;
+    max-height: 400px;
 }
 
 hr{
